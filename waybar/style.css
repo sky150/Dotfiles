@@ -106,6 +106,16 @@ menu,
   border-radius: 6px;
 }
 
+/* Vpn */
+#custom-vpn {
+  font-size: 18px;
+  background: @mantle;
+  color:  #cba6f7; /* #93e2d5*/
+  padding: 0px 5px 0px 10px;
+  border-radius: 6px;
+}
+
+
 /* Clock */
 #clock {
   padding: 0 15px;

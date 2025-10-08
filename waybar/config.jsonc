@@ -4,7 +4,12 @@
   "margin-right": 10,
   "margin-top": 5,
   "margin-bottom": 0,
-  "modules-left": ["hyprland/workspaces", "cpu", "memory"],
+  "modules-left": [
+    "hyprland/workspaces", 
+    "cpu", 
+    "memory", 
+    "custom/vpn"
+  ],
   "modules-center": ["clock"],
   "modules-right": [
     "hyprland/window",
@@ -22,6 +27,12 @@
     //"backlight",
     //"battery"
   ],
+  "custom/vpn": {
+  "format": " ",            // unlocked icon
+  "format-alt": " ",        // locked icon 
+  "tooltip": false,
+  "on-click": "~/.config/vpn/scripts/toggle-vpn.sh"
+  },
   "custom/server-status": {
     "format": "{}",
     "return-type": "json",
