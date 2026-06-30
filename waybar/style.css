@@ -1,4 +1,4 @@
-@import 'mocha.css';
+@import "mocha.css";
 
 * {
   font-family: JetBrains Mono Nerd Font;
@@ -30,6 +30,12 @@ menu,
   border-radius: 6px;
 }
 
+#custom-weather {
+  background: @mantle;
+  padding: 7px 8px;
+  margin: 5px;
+  border-radius: 5px;
+}
 /* Workspace */
 #workspaces {
   background: @mantle;
@@ -52,9 +58,16 @@ menu,
   opacity: 0.8;
 }
 
+#workspaces button.visible {
+  color: #1e1e2e;
+  background: @mauve;
+  min-width: 20px;
+  opacity: 1;
+}
+
 #workspaces button.active {
   color: #1e1e2e;
-  background: #cba6f7;
+  background: @mauvedark;
   min-width: 20px;
   opacity: 1;
 }
@@ -110,11 +123,10 @@ menu,
 #custom-vpn {
   font-size: 18px;
   background: @mantle;
-  color:  #cba6f7; /* #93e2d5*/
+  color: #cba6f7; /* #93e2d5*/
   padding: 0px 5px 0px 10px;
   border-radius: 6px;
 }
-
 
 /* Clock */
 #clock {
@@ -123,6 +135,21 @@ menu,
   border-radius: 6px;
 }
 
+#custom-label-even,
+#custom-label-odd {
+  padding: 0 7px;
+  color: @text;
+  border-radius: 6px;
+}
+/* #custom-label-even { */
+/*   padding: 0 15px; */
+/*   color: @text; */
+/*   border-radius: 6px; */
+/* } */
+/**/
+/* #custom-label-odd { */
+/**/
+/* } */
 /* Window Hyprland */
 window#waybar {
   border-radius: 6px;
@@ -175,7 +202,7 @@ window#waybar {
 /* Wallpaper */
 #custom-wallpaper {
   font-size: 20px;
-  font-family: 'Font Awesome 5 Free';
+  font-family: "Font Awesome 5 Free";
   padding: 0px 8px;
   margin-right: 1px;
   color: #f38ba8;
@@ -184,9 +211,9 @@ window#waybar {
   border-radius: 6px;
 }
 
-#custom-screenshot{
+#custom-screenshot {
   font-size: 18px;
-  font-family: 'Font Awesome 5 Free';
+  font-family: "Font Awesome 5 Free";
   padding: 0px 8px;
   margin-right: 1px;
   color: #f38ba8;
@@ -197,7 +224,7 @@ window#waybar {
 
 #custom-server-status {
   font-size: 18px;
-  font-family: 'Font Awesome 5 Free';
+  font-family: "Font Awesome 5 Free";
   padding: 0px 8px;
   margin-right: 1px;
   color: #f38ba8;
@@ -302,7 +329,7 @@ window#waybar {
   border-left: 0px;
   border-right: 0px;
   padding: 6px;
-  font-family: 'bargraph';
+  font-family: "bargraph";
   background: @mantle;
   margin: 0px 2px;
 }
