@@ -7,7 +7,7 @@ TARGET="$HOME/Bilder/Wallpaper"
 WALLPAPER=$(find "$TARGET" -type f -regex '.*\.\(jpg\|jpeg\|png\|webp\)' | shuf -n 1)
 
 # Set wallpaper with swww
-swww img "$WALLPAPER"
+awww img "$WALLPAPER"
 
 # Save wallpaper path for persistence
 echo "$WALLPAPER" > ~/.cache/current-wallpaper
